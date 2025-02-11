@@ -3,28 +3,17 @@
     padding:0;
 }
 
-<<<<<<< HEAD
-body{   
-    font-family:Verdana, Geneva, Tahoma, sans-serifs;
-     background-color: beige;
-=======
 body {
     font-family: "Inter Tight", serif;
->>>>>>> 52c38cd2e429581b73807a0ee353f5375eddcff5
 }
 
 .nav-bar{
     display: flex;
-<<<<<<< HEAD
-     background-color:cadetblue;
-=======
->>>>>>> 52c38cd2e429581b73807a0ee353f5375eddcff5
     justify-content: space-between;
     align-items: center;
 }
 
 .logo-div{
-    /* padding: 25px; */
     font-size: larger;
     align-items: center;
     font-weight: bold;
@@ -35,15 +24,6 @@ body {
     display: flex;
     padding: 10px 20px;
     gap:40px;
-<<<<<<< HEAD
-    list-style: none;
-}
-.nav-links-li{
-    cursor: pointer;
-}
-.nav-links-li:hover{
-    text-shadow: 0px 0px 4px;
-=======
 }
 .nav-links-li {
     list-style: none;
@@ -55,5 +35,4 @@ body {
 .nav-links-li a{
     text-decoration: none;
     color: inherit;
->>>>>>> 52c38cd2e429581b73807a0ee353f5375eddcff5
 }
