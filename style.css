@@ -5,21 +5,31 @@
 
 body{   
     font-family:Verdana, Geneva, Tahoma, sans-serifs;
+     background-color: beige;
 }
 
 .nav-bar{
     display: flex;
-    background-color: aquamarine;
+     background-color:cadetblue;
     justify-content: space-between;
 }
 
 .logo-div{
     padding: 25px;
     align-items: center;
+    font-weight: bold;
 }
+
 
 .nav-links-ul{
     display: flex;
     padding: 20px;
     gap:40px;
+    list-style: none;
+}
+.nav-links-li{
+    cursor: pointer;
+}
+.nav-links-li:hover{
+    text-shadow: 0px 0px 4px;
 }
