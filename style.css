@@ -1,0 +1,21 @@
+*{
+    margin: 0;  
+    padding:0;
+}
+
+body{   
+    font-family:Verdana, Geneva, Tahoma, sans-serifs;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
+.logo-div{
+    padding: 25px;
+    font-weight: bold;
+}
+
+    
