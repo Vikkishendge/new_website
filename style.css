@@ -15,7 +15,11 @@ body{
 
 .logo-div{
     padding: 25px;
-    font-weight: bold;
+    align-items: center;
 }
 
-    
+.nav-links-ul{
+    display: flex;
+    padding: 20px;
+    gap:40px;
+}
