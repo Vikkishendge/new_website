@@ -68,7 +68,7 @@ section {
     /* border: 1px solid black; */
     padding: 20px;
     min-height: 480px;
-    width: 1024px;
+    width: 1224px;
 }
 
 .header-main-component {
@@ -114,3 +114,66 @@ section {
 .get-started span {
     /* font-weight: 700; */
 }
+
+
+/*services section*/
+
+.service-component {
+    /* border: 1px solid black; */
+}
+.service-header h1 {
+    font-size: 44px;
+    margin: 20px 0px;
+}
+
+.service-details-container {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.service-card {
+    background-color: white;
+    padding: 20px;
+    margin: 5px 0px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.service-content-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+}
+.service-content-div h2 {
+    font-size: 24px;
+}
+.service-content-div p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.marquee-div {
+    padding: 20px;
+    text-align: center;
+    background-color: #E8E8E8	;
+}
+.marquee-div h1 {
+    font-size: 34px;
+    font-weight: 400;
+}
+marquee {
+    padding: 20px;
+    margin: 20px;
+}
+marquee  span {
+    margin: 0px 20px;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/*EO services section*/
