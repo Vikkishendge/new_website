@@ -108,7 +108,8 @@ section {
 }
 
 .header-title-logo {
-    color: #908f8f;
+    /* color: #908f8f; */
+    color: #404040;
 }
 
 .header-main-component {
