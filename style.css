@@ -264,6 +264,12 @@ section {
     flex-direction: column;
     gap: 30px;
 }
+.service-icon-div {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 10px;
+}
 .service-content-div {
     display: flex;
     flex-direction: column;
@@ -279,9 +285,30 @@ section {
 .service-content-div p {
     font-size: 14px;
     font-style: italic;
-    /* color: #818589; */
+    /* color: #818589s; */
     color: #343434;
 }
+
+
+.service-card-color-1 {
+    background-color: #deeaee;
+}
+.service-card-color-2 {
+    background-color: #f7cac9;
+}
+.service-card-color-3 {
+    background-color: #b1cbbb;
+}
+.service-card-color-4 {
+    background-color: #eea29a;
+}
+.service-card-color-5 {
+    background-color: #92a8d1;
+}
+.service-card-color-6 {
+    background-color: #c94c4c;
+}
+
 
 
 /*EO services section*/
