@@ -56,6 +56,7 @@ body::before {
 
 .logo {
     font-family: var(--font-rubik);
+    letter-spacing: -4px;
 }
 
 nav {
@@ -75,7 +76,6 @@ nav {
 }
 .logo-div h1 {
     font-weight: 400;
-    letter-spacing: -4px;
 }
 
 
@@ -107,9 +107,17 @@ section {
     /* background-color: red; */
 }
 
+.header-title-logo {
+    color: #908f8f;
+}
+
 .header-main-component {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+}
+.header-main-component > * {
+    /* padding: 20px 40px; */
 }
 
 .header-image img{
@@ -118,10 +126,12 @@ section {
     margin-left: 80px;
 }
 .header-title-div {
+    width: max-content;
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: space-between;
+    /* border-right: 1px solid gray; */
 }
 .header-title-div h1{
     line-height: 100%;
@@ -137,6 +147,11 @@ section {
     font-family: var(--font-mulish);
     line-height: 90%;
 }    
+
+.header-side-title {
+    max-width: 400px;
+    padding: 0px 20px;
+}
 .header-button-div {
     margin: 0 auto;
 }
@@ -158,6 +173,45 @@ section {
 }
 .get-started span {
     /* font-weight: 700; */
+}
+
+
+.marquee-div {
+    margin: 20px 0px;
+    font-family: var(--font-montserrat);
+    padding: 20px;
+    text-align: center;
+    /* background-color: var(--bg-neutral--white-200); */
+}
+.marquee-div h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+
+}
+.marquee-content {
+    margin: 20px;
+    display: flex;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+.marquee-item {
+    padding: 12px 32px;
+    font-size: 18px;
+    color: #333;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 
@@ -210,42 +264,5 @@ section {
     color: #343434;
 }
 
-.marquee-div {
-    margin: 100px 0px;
-    font-family: var(--font-montserrat);
-    padding: 20px;
-    text-align: center;
-    /* background-color: var(--bg-neutral--white-200); */
-}
-.marquee-div h1 {
-    font-size: 28px;
-    font-weight: 400;
-}
-
-.marquee-container {
-    overflow: hidden;
-    position: relative;
-
-}
-.marquee-content {
-    margin: 20px;
-    display: flex;
-    animation: scroll 20s linear infinite;
-    white-space: nowrap;
-}
-.marquee-item {
-    padding: 12px 32px;
-    font-size: 18px;
-    color: #333;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 /*EO services section*/
