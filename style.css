@@ -5,6 +5,7 @@
 
 :root {
 
+    --font-poly: "Poly", serif;
     --font-inter-tight: "Inter Tight", serif;
     --font-azeret:"Azeret Mono", serif;
     --font-rubik: "Rubik Mono One", serif;
@@ -13,10 +14,16 @@
     --font-poppins: "Poppins", serif;
     --bg-border-gray: #e8e8e8;
     --bg-neutral--white-200: #fafafa;
-    --mask-gradient: linear-gradient(-20deg, transparent 40%, white);
+    --mask-gradient: linear-gradient(-20deg, transparent 10%, white);
 }
 
 .italic {
+    font-family: var(--font-mulish);
+    font-style: italic;
+    font-weight: 200;
+    line-height: 90%;
+}
+.font-normal {
     font-style: normal;
     font-weight: 300;
 }
@@ -25,8 +32,8 @@ body {
     font-family: "Inter Tight", serif;
 }
 body::before {
-    --size: 45px;
-    --line: color-mix(in hsl, canvasText, transparent 70%);
+    --size: 50px;
+    --line: color-mix(in hsl, canvasText, transparent 80%);
     content: ' ';
     height: 100vh;
     width: 100vw;
@@ -46,6 +53,11 @@ body::before {
     pointer-events: none;
     z-index: -1;
 }
+
+.logo {
+    font-family: var(--font-rubik);
+}
+
 nav {
     background-color: white;
 }
@@ -64,7 +76,6 @@ nav {
 .logo-div h1 {
     font-weight: 400;
     letter-spacing: -4px;
-    font-family: var(--font-rubik);
 }
 
 
@@ -93,50 +104,57 @@ section {
     padding: 20px;
     min-height: 480px;
     width: 1224px;
+    /* background-color: red; */
 }
 
 .header-main-component {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-.header-main-component > * {
-    flex: 1;
-}
-.header-image img{
-    width: 500px;
-    height: 500px;
 
+.header-image img{
+    width: 400px;
+    height: 400px;
+    margin-left: 80px;
 }
 .header-title-div {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+    justify-content: space-between;
 }
 .header-title-div h1{
     line-height: 100%;
     font-size: 46px;
     font-family: var(--font-mulish);
 }
-.header-title-div p{
-    font-size: 16px;
-    font-family: var(--font-montserrat);
+.header-title-p-1 {
+    font-size: 22px;
+}
+.header-title-p-2{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--font-mulish);
+    line-height: 90%;
 }    
 .header-button-div {
     margin: 0 auto;
 }
 .header-button-div button {
     padding: 15px 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 2px solid white;
     background-color: black;
     color: white;
     outline: 0px;
     font-size: 12px;
-    transition:all ease-in-out 0.15s;
+    transition:all ease-in-out 0.35s;
 }
 .header-button-div button:hover {
     cursor: pointer;
-    outline: 2px solid black;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
 }
 .get-started span {
     /* font-weight: 700; */
@@ -155,6 +173,7 @@ section {
     font-style: italic;
     margin: 20px 0px;
 }
+
 
 .service-details-container {
     margin: 10px 0px;
