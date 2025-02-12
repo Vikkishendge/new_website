@@ -149,8 +149,27 @@ section {
 }    
 
 .header-side-title {
-    max-width: 400px;
+    background-image: url("./assets/images/virtual-technology-futuristic-user-interface-600nw-2309806011.webp");
+    min-width: 400px;
     padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.margin {
+    flex: 1;
+}
+.our-team {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 100%;
+}
+.scroll-title p {
+    font-size: 20px;
 }
 .header-button-div {
     margin: 0 auto;
