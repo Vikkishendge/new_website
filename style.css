@@ -13,6 +13,11 @@
     --mask-gradient: linear-gradient(-20deg, transparent 40%, white);
 }
 
+.italic {
+    font-style: normal;
+    font-weight: 300;
+}
+
 body {
     font-family: "Inter Tight", serif;
 }
@@ -133,9 +138,12 @@ section {
 
 .service-component {
     /* border: 1px solid black; */
+    margin: 50px 0px;
 }
 .service-header h1 {
     font-size: 44px;
+    font-weight: 200;
+    font-style: italic;
     margin: 20px 0px;
 }
 
@@ -170,16 +178,16 @@ section {
 .service-content-div p {
     font-size: 14px;
     font-style: italic;
-    color: #818589;
-
+    /* color: #818589; */
+    color: #343434;
 }
 
 .marquee-div {
-    margin-top: 50px;
+    margin: 100px 0px;
     font-family: var(--font-montserrat);
     padding: 20px;
     text-align: center;
-    background-color: var(--bg-neutral--white-200);
+    /* background-color: var(--bg-neutral--white-200); */
 }
 .marquee-div h1 {
     font-size: 28px;
