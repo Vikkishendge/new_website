@@ -7,9 +7,7 @@
     <title>Code Fusion</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -65,13 +63,11 @@
             <div class="services-component-inner"></div>
             <div class="marquee-div">
                 <h1>OUR TECH STACK</h1>
-                <marquee behavior="" direction="left">
-                    <span>Javascript</span>
-                    <span>MERN</span>
-                    <span>ReactJS</span>
-                    <span>NodeJS</span>
-                    <span>dotnet</span>
-                </marquee>
+                <div class="marquee-container">
+                    <div class="marquee-content" id="marquee">
+
+                    </div>
+                </div>
             </div>
                 <div class="service-header">
                     <h1>Our awesome services to give you success </h1>
@@ -80,7 +76,7 @@
                 <div class="service-details-container">
                     <div class="service-card">
                         <div class="service-icon-div">
-                            <img src="./images/icons8-website-50.png" alt="Website developement" />
+                            <img src="./assets/images/icons8-website-50.png" alt="Website developement" />
                         </div>
 
                         <div class="service-content-div">
@@ -94,7 +90,7 @@
 
                     <div class="service-card">
                         <div class="service-icon-div">
-                            <img src="./images/icons8-software-development-50.png" alt="software developement" />
+                            <img src="./assets/images/icons8-software-development-50.png" alt="software developement" />
                         </div>
 
                         <div class="service-content-div">
@@ -107,11 +103,11 @@
                     </div>                    
                     <div class="service-card">
                         <div class="service-icon-div">
-                            <img src="./images/icons8-web-50.png" alt="software developement" />
+                            <img src="./assets/images/icons8-web-50.png" alt="software developement" />
                         </div>
 
                         <div class="service-content-div">
-                            <h2>Web Application Development</h2>
+                            <h2>Web App Development</h2>
                             <p>Enhance user engagement and boost business performance with dynamic
                                 web applications. Our web apps are built to scale, ensuring fast and 
                                 secure user interactions across all devices.
@@ -121,7 +117,7 @@
 
                     <div class="service-card">
                         <div class="service-icon-div">
-                            <img src="./images/icons8-android-os-50.png" alt="software developement" />
+                            <img src="./assets/images/icons8-android-os-50.png" alt="software developement" />
                         </div>
 
                         <div class="service-content-div">
@@ -136,7 +132,7 @@
                 
                     <div class="service-card">
                         <div class="service-icon-div">
-                            <img src="./images/icons8-desktop-50.png" alt="software developement" />
+                            <img src="./assets/images/icons8-desktop-50.png" alt="software developement" />
                         </div>
 
                         <div class="service-content-div">
@@ -150,7 +146,7 @@
 
                     <div class="service-card">
                         <div class="service-icon-div">
-                            <img src="./images/icons8-application-50.png" alt="software developement" />
+                            <img src="./assets/images/icons8-application-50.png" alt="software developement" />
                         </div>
 
                         <div class="service-content-div">
@@ -166,6 +162,9 @@
             </div>
         </div>
     </section>
+    <div id="test-2d"></div>
+    <script src="./utils/toggleGridonScroll.js"></script>
+    <script src="./utils/marqueeAnimation.js"></script>
 </body>
 
 </html>

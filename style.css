@@ -3,6 +3,16 @@
     padding:0;
 }
 
+:root {
+    --font-inter-tight: "Inter Tight", serif;
+    --font-montserrat: "Montserrat", serif;
+    --font-mulish: "Mulish", serif;
+    --font-poppins: "Poppins", serif;
+    --bg-border-gray: #e8e8e8;
+    --bg-neutral--white-200: #fafafa;
+    --mask-gradient: linear-gradient(-20deg, transparent 40%, white);
+}
+
 body {
     font-family: "Inter Tight", serif;
 }
@@ -21,7 +31,8 @@ body::before {
     50% 50% / var(--size) var(--size),
     linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
     var(--size) var(--size);
-    mask: linear-gradient(-20deg, transparent 40%, white);
+    /* mask: linear-gradient(-20deg, transparent 40%, white); */
+    mask: var(--mask-gradient);
     top: 0;
     transform-style: flat;
     pointer-events: none;
@@ -90,9 +101,11 @@ section {
 }
 .header-title-div h1{
     font-size: 44px;
+    font-family: var(--font-montserrat);
 }
 .header-title-div p{
     font-size: 16px;
+    font-family: var(--font-mulish);
 }    
 .header-button-div {
     margin: 0 auto;
@@ -133,11 +146,11 @@ section {
     grid-gap: 30px;
 }
 .service-card {
-    background-color: white;
+    background-color: var(--bg-neutral--white-200);
     padding: 20px;
     margin: 5px 0px;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 1px solid var(--bg-border-gray);
+    border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -149,31 +162,54 @@ section {
     text-align: start;
 }
 .service-content-div h2 {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 90%;
+    font-family: var(--font-poppins);
 }
 .service-content-div p {
     font-size: 14px;
     font-style: italic;
+    color: #818589;
+
 }
 
 .marquee-div {
+    margin-top: 50px;
+    font-family: var(--font-montserrat);
     padding: 20px;
     text-align: center;
-    background-color: #E8E8E8	;
+    background-color: var(--bg-neutral--white-200);
 }
 .marquee-div h1 {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 400;
 }
-marquee {
-    padding: 20px;
-    margin: 20px;
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+
 }
-marquee  span {
-    margin: 0px 20px;
-    padding: 15px 30px;
-    background-color: white;
-    border-radius: 15px;
+.marquee-content {
+    margin: 20px;
+    display: flex;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+.marquee-item {
+    padding: 12px 32px;
+    font-size: 18px;
+    color: #333;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /*EO services section*/
