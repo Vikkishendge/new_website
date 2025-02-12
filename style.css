@@ -4,7 +4,10 @@
 }
 
 :root {
+
     --font-inter-tight: "Inter Tight", serif;
+    --font-azeret:"Azeret Mono", serif;
+    --font-rubik: "Rubik Mono One", serif;
     --font-montserrat: "Montserrat", serif;
     --font-mulish: "Mulish", serif;
     --font-poppins: "Poppins", serif;
@@ -57,7 +60,11 @@ nav {
 .logo-div{
     font-size: larger;
     align-items: center;
-    font-weight: bold;
+}
+.logo-div h1 {
+    font-weight: 400;
+    letter-spacing: -4px;
+    font-family: var(--font-rubik);
 }
 
 
@@ -77,6 +84,7 @@ nav {
     text-decoration: none;
     color: inherit;
     font-size: 14px;
+    font-family: var(--font-azeret);
 }
 
 section {
@@ -105,12 +113,13 @@ section {
     gap: 50px;
 }
 .header-title-div h1{
-    font-size: 44px;
-    font-family: var(--font-montserrat);
+    line-height: 100%;
+    font-size: 46px;
+    font-family: var(--font-mulish);
 }
 .header-title-div p{
     font-size: 16px;
-    font-family: var(--font-mulish);
+    font-family: var(--font-montserrat);
 }    
 .header-button-div {
     margin: 0 auto;
