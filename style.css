@@ -11,6 +11,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
+    padding: 30px;
 }
 
 .logo-div{
@@ -35,4 +37,57 @@ body {
 .nav-links-li a{
     text-decoration: none;
     color: inherit;
+    font-size: 14px;
+}
+
+section {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    padding: 20px;
+    min-height: 480px;
+    width: 1024px;
+}
+
+.header-main-component {
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-main-component > * {
+    flex: 1;
+}
+.header-image img{
+    width: 500px;
+    height: 500px;
+
+}
+.header-title-div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.header-title-div h1{
+    font-size: 44px;
+}
+.header-title-div p{
+    font-size: 16px;
+}    
+.header-button-div {
+    margin: 0 auto;
+}
+.header-button-div button {
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    outline: 0px;
+    font-size: 12px;
+    transition:all ease-in-out 0.15s;
+}
+.header-button-div button:hover {
+    cursor: pointer;
+    outline: 2px solid black;
+}
+.get-started span {
+    /* font-weight: 700; */
 }
