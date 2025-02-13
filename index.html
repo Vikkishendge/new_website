@@ -237,12 +237,45 @@
                     <div class="rating">★★★★★</div>
                     <h3 class="name">Tukya Sonmale</h3>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Section-->
+    <!-- Contact form Section-->
+
+    <section>
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Get in Touch with CODE FUSION</h2>
+                <p>Let's innovate together. Reach out to our team for expert solutions</p>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"  placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+                    <label for="project-type">Project Type:</label>
+                    <select id="project-type" name="project-type" required> 
+                        <option value="" disabled selected>Select project type</option>
+                        <option value="website">Website</option>
+                        <option value="software">Software</option>
+                    </select>
+
+                    <label for="details">Project Details:</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Describe your project" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <script src="./utils/toggleGridonScroll.js"></script>
     <script src="./utils/marqueeAnimation.js"></script>
