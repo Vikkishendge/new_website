@@ -313,12 +313,37 @@ section {
 
 
 
-/*EO services section*/
+/*E/O services section*/
 
 
 
 
+/* S/O Projects */
 
+.projects-component {
+    background-color: var(--bg-border-gray);
+    padding: 40px;
+}
+.projects-details {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.project-details-card {
+    background-color: #c94c4c;
+    position: relative;
+}    
+.project-details-card img {
+    width: inherit;
+    height: 200px;
+}
+.project-details-card h3 {
+    color: white;
+    position: absolute;
+    top: 0;
+}
+/* E/O Projects */
 
 
 
