@@ -351,9 +351,57 @@ section {
 /* testimonials starts*/
 
 .testimonial-container{
-
+   
+    margin :auto;
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
 }
 
+.testimonial-header h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+}
 
+.testimonial-content-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-slider{
+    width: 300px;
+    background: linear-gradient(135deg,#f9f9f9,#e3e3e3);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote{
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.rating{
+    color:#ffcc00;
+    font-size: 24px;
+    margin: 15px 0;
+}
+.name{
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 10px;
+}
 
 /* testimonials ends*/
