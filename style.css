@@ -501,14 +501,14 @@ section {
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .quote{
     font-size: 18px;
     color: #444;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .rating{
@@ -521,6 +521,7 @@ section {
     font-weight: 700;
     color: #222;
     margin-top: 10px;
+    text-decoration: underline;
 }
 
 /* testimonials ends*/
