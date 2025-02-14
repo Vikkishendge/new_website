@@ -109,7 +109,8 @@ section {
 
 .header-title-logo {
     /* color: #908f8f; */
-    color: #404040;
+    /* color: #404040; */
+    font-weight: 300;
     letter-spacing: -5.5px;
 }
 
@@ -177,8 +178,8 @@ section {
     margin: 0 auto;
 }
 .header-button-div button {
-    padding: 15px 20px;
-    border-radius: 10px;
+    padding: 15px 40px;
+    border-radius: 5px;
     border: 2px solid white;
     background-color: black;
     color: white;
