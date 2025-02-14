@@ -334,16 +334,7 @@ section {
     grid-gap: 40px;
     width: 100%;
 }
-.project-details-card {
-    cursor:not-allowed;
-    border-radius: 10px;
-    border: 1px solid var(--bg-border-gray);
-    background-color: var(--bg-neutral--white-200);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
+
 .projects-header {
     padding: 20px 0px;
     width: 100%;
@@ -360,25 +351,25 @@ section {
 .card {
     width: 100%;
     height: 300px;
-    border-radius: 2px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     /* transition: transform 0.3s ease; */
     transition: all 0.7s ease;
     /* border: 1px solid var(--bg-border-gray); */
-    box-shadow: 5px 5px 4px #444;
-    filter: drop-shadow(0px 0px #696969);
     /* border: 2px inset black;
     outline: 1px solid white;
     outline-style: outset;
     */
+    box-shadow: 7px 7px 8px #ba5370;
+    filter: drop-shadow(7px 7px #f4e2d8);
 } 
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 7px 7px 8px #ba5370;
-    filter: drop-shadow(7px 7px #f4e2d8);
+    transform: translateY(5px);
+    box-shadow: 5px 5px 4px #444;
+    filter: drop-shadow(0px 0px #696969);
 }
 
 .card-image {
@@ -406,7 +397,8 @@ section {
         rgba(0, 0, 32, 0.6) 50%,
         rgba(0, 0, 32, 0.4) 75%,
         rgba(0, 0, 32, 0) 100%
-        );
+    );
+    font-weight: 400;
 }
 
 
@@ -414,14 +406,15 @@ section {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 8px;
+    font-family: var(--font-mulish);
 }
 
 .card-subtitle {
-    font-size: 0.9rem;
-    opacity: 0.95;
+    font-size: 0.8rem;
     font-style: italic;
-    font-family: var(--font-inter-tight);
+    font-family: var(--font-montserrat);
     line-height: 90%;
+    font-weight: 300;
 }
 
 .card-subtitle span {
@@ -449,9 +442,25 @@ section {
     -webkit-filter: grayscale(0%);
 }
 
+.services-outro-p {
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-family: var(--font-poppins);
+    /* font-weight: 500; */
+    /* line-height: 95%; */
+    padding: 8px;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
 
-
-
+.services-outro-p-italic {
+    font-style: italic;
+    font-weight: 300;
+}
+.services-outro-p-font-normal {
+    font-style: normal;
+    font-weight: 400;
+}
 
 /* E/O Projects */
 
