@@ -261,16 +261,21 @@ section {
     padding: 20px;
     margin: 5px 0px;
     border: 1px solid var(--bg-border-gray);
-    border-radius: 0.75rem;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
     gap: 30px;
+
 }
 .service-icon-div {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+.service-icon-div img {
+    width: 50px;
+    height: 50px;
 }
 .service-content-div {
     display: flex;
@@ -279,6 +284,7 @@ section {
     text-align: start;
 }
 .service-content-div h2 {
+    /* text-align: end; */
     font-size: 22px;
     font-weight: 300;
     line-height: 90%;
@@ -317,17 +323,12 @@ section {
 
 
 
-
-/* S/O Projects */
-
 .projects-component {
-    /* background-color: var(--bg-border-gray); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: linear-gradient(90deg,  #03001e, #7303c0, #ec38bc, #fdeff9); */
-    /* box-shadow: 0 4px 16px   linear-gradient(#ba5370, #f4e2d8);
-    */
+    gap: 60px;
+    margin-bottom: 100px;
 }
 .projects-details {
     margin: 0 auto;
@@ -336,17 +337,7 @@ section {
     grid-gap: 40px;
     width: 100%;
 }
-.project-details-card {
-    cursor:not-allowed;
-    border-radius: 10px;
-    border: 1px solid var(--bg-border-gray);
-    
-    background-color: var(--bg-neutral--white-200);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
+
 .projects-header {
     padding: 20px 0px;
     width: 100%;
@@ -356,44 +347,6 @@ section {
     text-align: center;
 }
 
-.project-details-card h3 {
-    font-weight: 400;
-    color: white;
-    font-size: 16px;
-}
-.project-details-card p {
-    font-size: 14px;
-    color: white;
-    font-weight: 500;
-    padding: 10px 10px;
-    font-family: var(--font-montserrat);
-    font-style: italic;
-    font-size: 14px;
-    text-align: center;
-}
-.project-details-card img {
-    width: inherit;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.project-details-card {
-    background-size: cover;
-    text-align: center;
-    height: 300px;
-    justify-content: end;
-    
-}
-.project-details-card-1 {
-    background-image: url(./assets/projects/sample_project.jpg);
-    color: white;
-}
-.project-details-card-2 {
-    background-image: url(./assets/projects/sample_project.jpg);
-}
-.project-details-card-3 {
-    background-image: url(./assets/projects/sample_project.jpg);
-}
 
 
 
@@ -405,11 +358,21 @@ section {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
+    /* transition: transform 0.3s ease; */
+    transition: all 0.7s ease;
+    /* border: 1px solid var(--bg-border-gray); */
+    /* border: 2px inset black;
+    outline: 1px solid white;
+    outline-style: outset;
+    */
+    box-shadow: 7px 7px 8px #ba5370;
+    filter: drop-shadow(7px 7px #f4e2d8);
+} 
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(5px);
+    box-shadow: 5px 5px 4px #444;
+    filter: drop-shadow(0px 0px #696969);
 }
 
 .card-image {
@@ -422,6 +385,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-filter: grayscale(100%);
 }
 
 .card-overlay {
@@ -431,37 +395,76 @@ section {
     right: 0;
     padding: 20px;
     color: white;
-    transition: all ease-in-out 1s;
-}
-
-.card:hover .card-overlay {
     background: linear-gradient(
         to top,
-        rgba(0, 0, 32, 0.9) 50%,
-        rgba(0, 0, 32, 0.7) 75%,
+        rgba(0, 0, 32, 0.6) 50%,
+        rgba(0, 0, 32, 0.4) 75%,
         rgba(0, 0, 32, 0) 100%
     );
+    font-weight: 400;
 }
+
 
 .card-title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 8px;
+    font-family: var(--font-mulish);
 }
 
 .card-subtitle {
-    font-size: 0.9rem;
-    opacity: 0.8;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: var(--font-montserrat);
+    line-height: 90%;
+    font-weight: 300;
 }
 
 .card-subtitle span {
     margin: 0 5px;
 }
+.card:hover .card-overlay {
+    /* background: linear-gradient(
+        to top,
+        rgba(0, 0, 32, 0.9) 50%,
+        rgba(0, 0, 32, 0.7) 75%,
+        rgba(0, 0, 32, 0) 100%
+    ); */
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 50%,
+        rgba(0, 0, 0, 0.7) 75%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    animation-name: colg;
+    animation-duration: 1s;
+}
 
+.card:hover .card-image img{
+    transition: all ease 1s;
+    -webkit-filter: grayscale(0%);
+}
 
+.services-outro-p {
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-family: var(--font-poppins);
+    /* font-weight: 500; */
+    /* line-height: 95%; */
+    padding: 8px;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
 
+.services-outro-p-italic {
+    font-style: italic;
+    font-weight: 300;
+}
+.services-outro-p-font-normal {
+    font-style: normal;
+    font-weight: 400;
+}
 
-/* E/O Projects */
 
 
 
@@ -474,15 +477,16 @@ section {
     padding: 50px 20px;
     text-align: center;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     overflow: hidden;
     position: relative;
+    background: linear-gradient(135deg,#f9f9f9,#e3e3e3);
 }
 
 .testimonial-header h2{
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 300;
     color: #222;
     margin-bottom: 25px;
 }
@@ -495,19 +499,21 @@ section {
 }
 
 .testimonial-slider{
+    background-color: white;
     width: 300px;
-    background: linear-gradient(135deg,#f9f9f9,#e3e3e3);
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     transition: all ease-in-out 1s;
+    outline: 2px solid outset #e3e3e3;
+    border: 2px solid inset #f9f9f9;
 }
 .testimonial-slider:hover{
    
 }
 .quote{
-    font-size: 18px;
+    font-size: 14px;
     color: #444;
     font-style: italic;
     line-height: 1.5;
@@ -515,15 +521,16 @@ section {
 
 .rating{
     color:#ffcc00;
-    font-size: 24px;
+    font-size: 22px;
     margin: 15px 0;
 }
 .name{
-    font-size: 20px;
-    font-weight: 700;
-    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    color: #696969;
     margin-top: 10px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-family: var(--font-inter-tight);
 }
 
 /* testimonials ends*/
@@ -611,3 +618,9 @@ section {
 
 
 /* Footer end  */
+
+
+
+
+
+
