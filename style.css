@@ -537,6 +537,43 @@ section {
 /* testimonials ends*/
 
 
+/* Contact S/O */
+
+.contact-container {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    padding: 50px 100px;
+    width: 600px;
+}
+.contact-header {
+    text-align: center;
+    margin: 20px 0px;
+}
+.contact-header h2 {
+    font-weight: 1000;
+    font-size: 40px;
+}
+.contact-header p {
+    color: #9c9c9c;
+    font-size: 20px;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+.contact-form input {
+    border: 1px solid var(--bg-border-gray);
+    padding: 20px;
+}
+
+.input-div {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+ /* Contact E/O */
 
 
 /* Footer start  */
@@ -618,8 +655,6 @@ section {
 
 
 /* Footer end  */
-
-
 
 
 
