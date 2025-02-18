@@ -1,381 +1,365 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Fusion</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Fusion</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    </head>
 
-<body>
-    <!--NavBar-->
-    <nav class="nav-bar">
-        <div class="logo-div">
-            <h1 class="logo">
-                CODEFUSION
-            </h1>
-        </div>
-
-        <div class="nav-links-div">
-            <ul class="nav-links-ul">
-                <li class="nav-links-li"><a href="#">HOME</a></li>
-                <li class="nav-links-li"><a href="#">SERVICES</a></li>
-                <li class="nav-links-li"><a href="#">ABOUT</a></li>
-                <li class="nav-links-li"><a href="#">CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main section (header)-->
-
-    <section>
-        <div class="header-main-component">
-            <div class="header-title-div">
-                <h1>Transform Your Digital Presence with <span class="logo header-title-logo">CODEFUSION</span>.</h1>
-                <p class="italic header-title-p-1">
-                    In today’s fast-paced digital world, your online presence can make
-                    or break your business. <br>
-                    At Code Fusion, we don’t just build websites—we craft comprehensive digital solutions that
-                    drive innovation, enhance user experience, and accelerate business growth.
-                </p>
-                <div class="header-button-div">
-                    <button class="get-started"><span>Get Started </span><span> &#x279C;</span></button>
-                </div>
-            </div>
-            <div class="header-side-title">
-                <div class="scroll-title">
-                    <p>Scroll to explore <span>&darr;</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="marquee-div">
-            <h1>OUR TECH STACK</h1>
-            <div class="marquee-container">
-                <div class="marquee-content" id="marquee">
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Service section -->
-    <section>
-        <div class="service-component">
-            <div class="services-component-inner">
-                <div class="service-header">
-                    <h1 class="service-header-h1"><span class="italic">Our awesome</span> <span
-                            class="font-normal">services</span> <span class="italic"> to give you success </span></h1>
-                </div>
-                <div class="service-details-container">
-                    <div class="service-card">
-                        <div class="service-icon-div service-card-color-1">
-                            <img src="./assets/images/icons8-website-50.png" alt="Website developement" />
-                        </div>
-
-                        <div class="service-content-div">
-                            <h2>Website Development</h2>
-                            <p>Create an engaging and responsive online presence with a custom-built website.
-                                From stunning design to seamless functionality, we build websites that capture
-                                attention and convert visitors into customers.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon-div  service-card-color-2">
-                            <img src="./assets/images/icons8-software-development-50.png" alt="software developement" />
-                        </div>
-
-                        <div class="service-content-div">
-                            <h2>software Development</h2>
-                            <p>Empower your business with custom software solutions designed
-                                to improve efficiency, streamline operations, and scale effortlessly.
-                                Our tailored software meets your unique business needs.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon-div  service-card-color-3">
-                            <img src="./assets/images/icons8-web-50.png" alt="software developement" />
-                        </div>
-
-                        <div class="service-content-div">
-                            <h2>Web App Development</h2>
-                            <p>Enhance user engagement and boost business performance with dynamic
-                                web applications. Our web apps are built to scale, ensuring fast and
-                                secure user interactions across all devices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon-div  service-card-color-4">
-                            <img src="./assets/images/icons8-android-os-50.png" alt="software developement" />
-                        </div>
-
-                        <div class="service-content-div">
-                            <h2>Mobile App Development</h2>
-                            <p>Reach your customers on-the-go with custom mobile apps.
-                                We design and develop iOS and Android apps that offer
-                                seamless user experiences and powerful features to help your business grow.
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="service-card">
-                        <div class="service-icon-div  service-card-color-5">
-                            <img src="./assets/images/icons8-desktop-50.png" alt="software developement" />
-                        </div>
-
-                        <div class="service-content-div">
-                            <h2>Desktop Application Development</h2>
-                            <p>Get reliable and high-performance desktop applications designed for Windows,
-                                macOS, and Linux. We build powerful solutions that run smoothly across
-                                platforms and enhance productivity.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon-div  service-card-color-6">
-                            <img src="./assets/images/icons8-application-50.png" alt="software developement" />
-                        </div>
-
-                        <div class="service-content-div">
-                            <h2>Application Development</h2>
-                            <p>Our expert team creates custom applications that streamline your workflows,
-                                improve operational efficiency, and deliver superior user experiences.
-                                Whether desktop, mobile, or web, we’ve got you covered.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project -->
-
-    <section>
-        <div class="projects-component">
-
-            <div class="projects-header">
-                <div class="service-header">
-                    <h1 class="service-header-h1"><span class="italic">Explore our recent </span> 
-                        <span class="font-normal">Projects.</span></h1>
-                </div>
+    <body>
+        <!--NavBar-->
+        <nav class="nav-bar">
+            <div class="logo-div">
+                <h1 class="logo">
+                    CODEFUSION
+                </h1>
             </div>
 
-            <div class="projects-details">
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./assets/projects/project-img.jpg" alt="Health App Development">
-                        <div class="card-overlay">
-                            <h3 class="card-title">Website</h3>
-                            <p class="card-subtitle">Seamless user performance & experience across all devices. 
-                                Features include dynamic content loading, optimized SEO, and interactive UI components</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./assets/projects/project-img1.jpg" alt="Health App Development">
-                        <div class="card-overlay">
-                            <h3 class="card-title">Web Application</h3>
-                            <p class="card-subtitle">A functional web application developed using MERN stack, 
-                                Real-time data processing and an intuitive UI, Designed for scalability and performance..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./assets/projects/project-img3.jpg" alt="Health App Development">
-                        <div class="card-overlay">
-                            <h3 class="card-title">Desktop</h3>
-                            <p class="card-subtitle">A cross-platform desktop application built for high efficiency and productivity 
-                                with offline functionality, robust state management, and secure data storage.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="services-outro">
-                <p class="services-outro-p">
-                    <span class="services-outro-p-italic">
-                        Our team of experienced <span class="services-outro-p-font-normal">developers</span> and <span class="services-outro-p-font-normal">designers</span> works closely with clients to create <span style="background-color: #ffff00;">tailor-made</span> solutions that meet their unique business goals.
-                    </span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- testimonial section-->
-    <section>
-        <div class="testimonial-container">
-            <div class="testimonial-header">
-                <h2>Don’t take our word, see what our customers say </h2>
-            </div>
-            <div class="testimonial-content-div">
-                <div class="testimonial-slider">
-                    <p class="quote">“ Working with several WordPress themes and templates the last years,
-                        I only can say this is best in every level. I use it for my company and the reviews that I have
-                        already are all excellent.
-                        Not only the design but the code quality ”</p>
-                    <div class="rating">★★★★★</div>
-                    <h3 class="name">- Vicky Shendge</h3>
-                </div>
-                <div class="testimonial-slider">
-                    <p class="quote">“ Working with several WordPress themes and templates the last years,
-                        I only can say this is best in every level. I use it for my company and the reviews that I have
-                        already are all excellent.
-                        Not only the design but the code quality ”</p>
-                    <div class="rating">★★★★★</div>
-                    <h3 class="name">- Vinay Shinde</h3>
-                </div>
-                <div class="testimonial-slider">
-                    <p class="quote">“ Working with several WordPress themes and templates the last years,
-                        I only can say this is best in every level. I use it for my company and the reviews that I have
-                        already are all excellent.
-                        Not only the design but the code quality ”</p>
-                    <div class="rating">★★★★★</div>
-                    <h3 class="name">- Tukya Sonmale</h3>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact form Section-->
-
-    <section>
-        <div class="contact-container">
-            <div class="contact-header">
-                <h2>Get in Touch</h2>
-                <p>Let's innovate together. Reach out to our team for expert solutions</p>
-            </div>
-            <div class="contact-form">
-                <form class="contact-form" action="">
-                    <div class="input-fields-div">
-                
-                        <div class="input-div">
-                            <div>
-                                <label for="name">Name</label><br>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" required>    
-                            </div>
-                            <div>
-                                <label for="email">Email</label><br>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-
-                        <div class="input-div">
-                            <div>
-                                <label for="contact">Contact Number</label><br>
-                                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
-                            </div>
-                                
-                            <div>
-                                <label for="project-type">Project Type</label><br>
-                                <select id="project-type" name="project-type" required>
-                                    <option value="" disabled selected>Select project type</option>
-                                    <option value="website">Website</option>
-                                    <option value="software">Software</option>
-                                    <option value="website">Desktop Application</option>
-                                    <option value="website">Web Application</option>
-                                    <option value="website">Mobile App</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-div">
-                        <label for="details">Project Details</label><br>
-                        <textarea id="details" name="details" rows="4" placeholder="Describe your project" required></textarea>
-                    </div>
-                
-                    <button  type="submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-        
-    </section>
-
-    <!--  footer section -->
-
-    <footer class="footer-section">
-        <div class="footer-container">
-            
-            <div class="footer-top">
-               <!-- 1 st column  hai vinya ye -->
-               
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact Us</a></li>
-
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Our Services</h4>
-                    <ul>
-                    <li>Website Development</li>
-                    <li>Software Development</li>
-                    <li>E-commerce solutions</li>
-                    <li>Desktop Application</li>
-                    <li>Web Application</li>
-                    <li>Mobile App</li>
-                   </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Follow Us</h4>
-                    <div class="social-media-icons">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 CODE FUSION. All Rights Reserved.</p>
-                <div class="logo-div">
-                    <h1 class="logo">
-                        CODEFUSION
-                    </h1>
-                </div>
-                <ul class="footer-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+            <div class="nav-links-div">
+                <ul class="nav-links-ul">
+                    <li class="nav-links-li"><a href="#">HOME</a></li>
+                    <li class="nav-links-li"><a href="#">SERVICES</a></li>
+                    <li class="nav-links-li"><a href="#">ABOUT</a></li>
+                    <li class="nav-links-li"><a href="#">CONTACT US</a></li>
                 </ul>
-                
             </div>
+        </nav>
 
-        </div>
-    </footer>
+        <!-- Main section (header)-->
 
-    <script src="./utils/toggleGridonScroll.js"></script>
-    <script src="./utils/marqueeAnimation.js"></script>
-</body>
+        <section>
+            <div class="header-main-component">
+                <div class="header-title-div">
+                    <h1>Transform Your Digital Presence with <span class="logo header-title-logo">CODEFUSION</span>.</h1>
+                    <p class="italic header-title-p-1">
+                        In today’s fast-paced digital world, your online presence can make
+                        or break your business. <br>
+                        At Code Fusion, we don’t just build websites—we craft comprehensive digital solutions that
+                        drive innovation, enhance user experience, and accelerate business growth.
+                    </p>
+                    <div class="header-button-div">
+                        <button class="get-started"><span>Get Started </span><span> &#x279C;</span></button>
+                    </div>
+                </div>
+                <div class="header-side-title">
+                    <div class="scroll-title">
+                        <p>Scroll to explore <span>&darr;</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-div">
+                <h1>OUR TECH STACK</h1>
+                <div class="marquee-container">
+                    <div class="marquee-content" id="marquee">
 
-</html> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Service section -->
+        <section>
+            <div class="service-component">
+                <div class="services-component-inner">
+                    <div class="service-header">
+                        <h1 class="service-header-h1"><span class="italic">Our awesome</span> <span
+                                class="font-normal">services</span> <span class="italic"> to give you success </span></h1>
+                    </div>
+                    <div class="service-details-container">
+                        <div class="service-card">
+                            <div class="service-icon-div service-card-color-1">
+                                <img src="./assets/images/icons8-website-50.png" alt="Website developement" />
+                            </div>
+
+                            <div class="service-content-div">
+                                <h2>Website Development</h2>
+                                <p>Create an engaging and responsive online presence with a custom-built website.
+                                    From stunning design to seamless functionality, we build websites that capture
+                                    attention and convert visitors into customers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon-div  service-card-color-2">
+                                <img src="./assets/images/icons8-software-development-50.png" alt="software developement" />
+                            </div>
+
+                            <div class="service-content-div">
+                                <h2>software Development</h2>
+                                <p>Empower your business with custom software solutions designed
+                                    to improve efficiency, streamline operations, and scale effortlessly.
+                                    Our tailored software meets your unique business needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon-div  service-card-color-3">
+                                <img src="./assets/images/icons8-web-50.png" alt="software developement" />
+                            </div>
+
+                            <div class="service-content-div">
+                                <h2>Web App Development</h2>
+                                <p>Enhance user engagement and boost business performance with dynamic
+                                    web applications. Our web apps are built to scale, ensuring fast and
+                                    secure user interactions across all devices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon-div  service-card-color-4">
+                                <img src="./assets/images/icons8-android-os-50.png" alt="software developement" />
+                            </div>
+
+                            <div class="service-content-div">
+                                <h2>Mobile App Development</h2>
+                                <p>Reach your customers on-the-go with custom mobile apps.
+                                    We design and develop iOS and Android apps that offer
+                                    seamless user experiences and powerful features to help your business grow.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-card">
+                            <div class="service-icon-div  service-card-color-5">
+                                <img src="./assets/images/icons8-desktop-50.png" alt="software developement" />
+                            </div>
+
+                            <div class="service-content-div">
+                                <h2>Desktop Application Development</h2>
+                                <p>Get reliable and high-performance desktop applications designed for Windows,
+                                    macOS, and Linux. We build powerful solutions that run smoothly across
+                                    platforms and enhance productivity.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon-div  service-card-color-6">
+                                <img src="./assets/images/icons8-application-50.png" alt="software developement" />
+                            </div>
+
+                            <div class="service-content-div">
+                                <h2>Application Development</h2>
+                                <p>Our expert team creates custom applications that streamline your workflows,
+                                    improve operational efficiency, and deliver superior user experiences.
+                                    Whether desktop, mobile, or web, we’ve got you covered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project -->
+
+        <section>
+            <div class="projects-component">
+
+                <div class="projects-header">
+                    <div class="service-header">
+                        <h1 class="service-header-h1"><span class="italic">Explore our recent </span> 
+                            <span class="font-normal">Projects.</span></h1>
+                    </div>
+                </div>
+
+                <div class="projects-details">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/projects/project-img.jpg" alt="Health App Development">
+                            <div class="card-overlay">
+                                <h3 class="card-title">Website</h3>
+                                <p class="card-subtitle">Seamless user performance & experience across all devices. 
+                                    Features include dynamic content loading, optimized SEO, and interactive UI components</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/projects/project-img1.jpg" alt="Health App Development">
+                            <div class="card-overlay">
+                                <h3 class="card-title">Web Application</h3>
+                                <p class="card-subtitle">A functional web application developed using MERN stack, 
+                                    Real-time data processing and an intuitive UI, Designed for scalability and performance..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/projects/project-img3.jpg" alt="Health App Development">
+                            <div class="card-overlay">
+                                <h3 class="card-title">Desktop</h3>
+                                <p class="card-subtitle">A cross-platform desktop application built for high efficiency and productivity 
+                                    with offline functionality, robust state management, and secure data storage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="services-outro">
+                    <p class="services-outro-p">
+                        <span class="services-outro-p-italic">
+                            Our team of experienced <span class="services-outro-p-font-normal">developers</span> and <span class="services-outro-p-font-normal">designers</span> works closely with clients to create <span style="background-color: #ffff00;">tailor-made</span> solutions that meet their unique business goals.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- testimonial section-->
+        <section>
+            <div class="testimonial-container">
+                <div class="testimonial-header">
+                    <h2>Don’t take our word, see what our customers say </h2>
+                </div>
+                <div class="testimonial-content-div">
+                    <div class="testimonial-slider">
+                        <p class="quote">“ Working with several WordPress themes and templates the last years,
+                            I only can say this is best in every level. I use it for my company and the reviews that I have
+                            already are all excellent.
+                            Not only the design but the code quality ”</p>
+                        <div class="rating">★★★★★</div>
+                        <h3 class="name">- Vicky Shendge</h3>
+                    </div>
+                    <div class="testimonial-slider">
+                        <p class="quote">“ Working with several WordPress themes and templates the last years,
+                            I only can say this is best in every level. I use it for my company and the reviews that I have
+                            already are all excellent.
+                            Not only the design but the code quality ”</p>
+                        <div class="rating">★★★★★</div>
+                        <h3 class="name">- Vinay Shinde</h3>
+                    </div>
+                    <div class="testimonial-slider">
+                        <p class="quote">“ Working with several WordPress themes and templates the last years,
+                            I only can say this is best in every level. I use it for my company and the reviews that I have
+                            already are all excellent.
+                            Not only the design but the code quality ”</p>
+                        <div class="rating">★★★★★</div>
+                        <h3 class="name">- Tukya Sonmale</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form Section-->
+
+        <section>
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>Get in Touch with CODE FUSION</h2>
+                    <p>Let's innovate together. Reach out to our team for expert solutions</p>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"  placeholder="Enter your name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+                        <label for="project-type">Project Type:</label>
+                        <select id="project-type" name="project-type" required> 
+                            <option value="" disabled selected>Select project type</option>
+                            <option value="website">Website</option>
+                            <option value="software">Software</option>
+                            <option value="website">Desktop Application</option>
+                            <option value="website">Web Application</option>
+                            <option value="website">Mobile App</option>
+                        </select>
+
+                        <label for="details">Project Details:</label>
+                        <textarea id="details" name="details" rows="4" placeholder="Describe your project" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--  footer section -->
+
+        <footer class="footer-section">
+            <div class="footer-container">
+                
+                <div class="footer-top">
+                <!-- 1 st column  hai vinya ye -->
+                
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Our Services</h4>
+                        <ul>
+                        <li>Website Development</li>
+                        <li>Software Development</li>
+                        <li>E-commerce solutions</li>
+                        <li>Desktop Application</li>
+                        <li>Web Application</li>
+                        <li>Mobile App</li>
+                    </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <div class="social-media-icons">
+                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 CODE FUSION. All Rights Reserved.</p>
+                    <div class="logo-div">
+                        <h1 class="logo">
+                            CODEFUSION
+                        </h1>
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="./utils/toggleGridonScroll.js"></script>
+        <script src="./utils/marqueeAnimation.js"></script>
+    </body>
+
+    </html> 
